@@ -9,18 +9,13 @@
         tools:layout="@layout/fragment_albums"
         android:name="com.you.expmdmfebrero.presentation.ui.AlbumsFragment">
         <action
-            android:id="@+id/album_list_to_album_detalle"
-            app:destination="@id/album_detalle" />
-    </fragment>
-    <fragment
-        android:id="@+id/album_detalle"
-        android:name="com.you.expmdmfebrero.presentation.ui.AlbumsFragment">
+            android:id="@+id/album_list_to_setas_list"
+            app:destination="@id/setas_listado" />
     </fragment>
 
     <fragment
         android:id="@+id/setas_listado"
         android:name="com.you.expmdmfebrero.presentation.ui.SetasFragment">
-
     </fragment>
 
 </navigation>

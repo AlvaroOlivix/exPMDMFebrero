@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.you.expmdmfebrero.databinding.FragmentAlbumsBinding
 import com.you.expmdmfebrero.presentation.adapter.album.AlbumAdapter
@@ -68,6 +69,10 @@ class AlbumsFragment : Fragment() {
 
         }
 
+    }
+
+    private fun navigateToSetas(){
+        findNavController().navigate(AlbumFragmentDirectoins().albumListToSetasList())
     }
 
     override fun onDestroyView() {
